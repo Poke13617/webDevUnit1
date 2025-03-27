@@ -26,6 +26,13 @@
 
     <script>
         // Write your function here
+    var box = document.getElementById("box");
+    var changeColorBtn = document.getElementById("changeColorBtn");
+    changeColorBtn.addEventListener("click", changeColor);
+    function changeColor(){
+        var color = prompt("What should the new color of the box be?");
+        box.style.backgroundColor = color;
+    }
     </script>
 </body>
 </html>

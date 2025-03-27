@@ -16,12 +16,27 @@
         <li>Item 3</li>
     </ul>
     <button onclick="insertItem()">Insert Before Second Item</button>
+    <button onclick="insertEnd()">Insert at the End</button>
 
     <br><br>
     <a href="index.html">Back to the home page</a>
 
     <script>
         // Write your function here
+        var li = document.getElementsByTagName("li");
+        var myList = document.getElementById("myList");
+        function insertItem(){
+           var newP = document.createElement("li");
+           newP.innerHTML = "New Item";
+            
+           li[0].appendChild(newP);
+        }
+        function inesrtEnd(){
+            var newP2 = document.createElement("li");
+            newP2.innerHTML = "New Item";
+
+            myList.appendChild(newP2);
+        }
     </script>
 </body>
 </html>
